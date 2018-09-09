@@ -1,0 +1,37 @@
+spring:
+  profiles:
+      active: development
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path: /api
+
+---
+
+server:
+  address: 0.0.0.0
+  port: 8090
+
+---
+
+spring:
+  profiles: development
+  datasource:
+    url: jdbc:hsqldb:file:~/db/Server
+    username: developer
+    password: developer
+    driverClassName: org.hsqldb.jdbcDriver
+
+---
+
+spring:
+  profiles: production
+  datasource:
+    url: jdbc:hsqldb:mem:Server;sql.syntax_pgs=true
+    username: production
+    password: production
+    driverClassName: org.hsqldb.jdbcDriver

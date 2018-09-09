@@ -1,0 +1,51 @@
+group 'react-start'
+version '0.0.1'
+
+buildscript {
+    repositories {
+        maven { url "http://maven.springframework.org/release" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE'
+        classpath 'com.moowork.gradle:gradle-node-plugin:1.2.0'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'com.moowork.node'
+
+mainClassName = 'ru.impressionbit.server.Main'
+
+repositories {
+    maven { url "http://maven.springframework.org/release" }
+    maven { url "https://plugins.gradle.org/m2/" }
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa:2.0.4.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-jdbc'
+    compile 'org.springframework.boot:spring-boot-starter-data-rest:2.0.4.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-websocket:2.0.4.RELEASE' // SockJS
+    compile 'org.springframework.boot:spring-boot-devtools:2.0.4.RELEASE'
+    compile 'org.springframework.batch:spring-batch-core:4.0.1.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:2.0.4.RELEASE'
+    compile 'org.hsqldb:hsqldb:2.3.1' // DB
+}
+
+task webpack(type: NpmTask) {
+    args = ['run', 'build']
+}
+
+processResources.dependsOn 'webpack'
+
+build {
+}
+
+bootRun {
+}

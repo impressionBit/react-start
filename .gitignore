@@ -1,0 +1,11 @@
+.idea
+.gradle
+*.iml
+build
+node_modules
+npm-debug.log
+logs/
+out/
+/src/main/resources/templates/
+/src/main/resources/static/
+package-lock.json
