@@ -26,8 +26,10 @@ export default function IndexLayout(props) {
                             id='app.state.title'/></Button>{` `}
                         <Button color="primary" onClick={() => props.history.push(routers.rest())}><FormattedMessage
                             id='app.rest.title'/></Button>{` `}
-                        <Button color="primary" onClick={() => props.history.push(routers.websocket())}><FormattedMessage
-                            id='app.websocket.title'/></Button>{` `}
+                        <Button color="primary" onClick={() => props.history.push(routers.webSocket())}><FormattedMessage
+                            id='app.webSocket.title'/></Button>{` `}
+                        <Button color="primary" onClick={() => props.history.push(routers.upload())}><FormattedMessage
+                            id='app.upload.title'/></Button>{` `}
                     </NavItem>
                 </Nav>
                 <Nav className='ml-auto' navbar>

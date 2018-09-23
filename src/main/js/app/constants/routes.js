@@ -11,4 +11,7 @@ export const state = () => `/${publicPath}/state`;
 export const rest = () => `/${publicPath}/rest`;
 
 // Index websocket
-export const websocket = () => `/${publicPath}/websocket`;
+export const webSocket = () => `/${publicPath}/websocket`;
+
+// Index upload
+export const upload = () => `/${publicPath}/upload`;
