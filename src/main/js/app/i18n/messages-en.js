@@ -6,6 +6,7 @@ export default {
     'app.state.title': 'State',
     'app.webSocket.title': 'WebSocket',
     'app.upload.title': 'Upload',
+    'app.test.title': 'Test',
     'app.home.title': 'Home',
     'app.language': 'Language',
 
@@ -13,6 +14,7 @@ export default {
     'app.page.main.text': 'Basic configuration of the project using React + Redux + Bootstrap.',
     'app.page.state.text': 'Reading and writing data in the application state.',
     'app.page.upload.text': 'Uploading files to the server.',
+    'app.page.test.text': 'Test. Frontend React',
     'app.page.rest.text.first': 'We get data from the database of the user table from the server.',
     'app.page.rest.text.second': 'Implemented the ability to add and remove users.',
     'app.page.websocket.text': 'Messaging in the style of WebSocket including the use of STOMP as a sub-protocol.',
@@ -35,4 +37,7 @@ export default {
 
     // Page upload
     'app.upload.input.message': 'Load image',
+
+    // Page test
+    'app.test.button': '{key} element',
 };

@@ -38,6 +38,12 @@ export default () => ({
             {
                 exclude: /node_modules/,
                 include: path.join(__dirname, 'src/main/js/'),
+                test: /\.ts?$/,
+                use: 'babel-loader'
+            },
+            {
+                exclude: /node_modules/,
+                include: path.join(__dirname, 'src/main/js/'),
                 test: /\.jsx?$/,
                 use: 'babel-loader'
             },
@@ -67,7 +73,7 @@ export default () => ({
         ]
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts'],
         modules: ['node_modules', 'src/main/js'],
         symlinks: false
     },

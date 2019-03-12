@@ -11,8 +11,10 @@
     "bootstrap": "^4.1.1",
     "history": "^4.7.2",
     "intl": "^1.2.5",
+    "rc-slider": "^8.6.6",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-dropzone": "^10.0.0",
     "react-intl": "^2.4.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
@@ -21,7 +23,8 @@
     "react-spinners": "^0.4.5",
     "react-stomp": "^3.2.0",
     "reactstrap": "^6.3.1",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "superagent": "^4.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

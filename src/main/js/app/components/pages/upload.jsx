@@ -5,7 +5,7 @@ import {
     Col,
     Jumbotron
 } from 'reactstrap';
-import Dropzone from 'react-dropzone';
+import Dropzone from 'react-dropzone'
 import request from 'superagent';
 import {upload} from 'app/axios/url';
 import {FormattedMessage, injectIntl} from 'react-intl';

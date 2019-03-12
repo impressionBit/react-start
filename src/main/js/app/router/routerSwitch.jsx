@@ -6,6 +6,7 @@ import StateLayout from 'app/components/pages/state';
 import RestLayout from 'app/components/pages/rest';
 import WebSocketLayout from 'app/components/pages/webSocket';
 import UploadLayout from 'app/components/pages/upload';
+import TestLayout from 'app/components/pages/test';
 
 export default () => (
     <Switch>
@@ -14,5 +15,6 @@ export default () => (
         <Route exact path={routes.rest()} component={RestLayout}/>
         <Route exact path={routes.webSocket()} component={WebSocketLayout}/>
         <Route exact path={routes.upload()} component={UploadLayout}/>
+        <Route exact path={routes.test()} component={TestLayout}/>
     </Switch>
 );

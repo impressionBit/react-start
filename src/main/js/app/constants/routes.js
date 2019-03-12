@@ -15,3 +15,7 @@ export const webSocket = () => `/${publicPath}/websocket`;
 
 // Index upload
 export const upload = () => `/${publicPath}/upload`;
+
+
+// Index test
+export const test = () => `/${publicPath}/test`;
